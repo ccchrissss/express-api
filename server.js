@@ -57,6 +57,10 @@ app.get('/api/:name', (request, response) => {
     }
 })
 
+app.get('/', (request, response) => {
+    response.sendFile(__dirname + '/main.js')
+})
+
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
