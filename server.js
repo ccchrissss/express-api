@@ -6,6 +6,12 @@ const PORT = 8000
 app.use(cors())
 
 let rappers = {
+    'mac miller': {
+        'age': 26,
+        'birthName': 'Malcolm James McCormick',
+        'birthdate': 'January 19, 1992',
+        'aliases': ['Easy Mac', 'Larry Fisherman', 'Delusional Thomas']
+    },
     '21 savage': {
         'age': 28,
         'birthName': 'Shéyaa Bin Abraham-Joseph',
