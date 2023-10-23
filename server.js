@@ -48,6 +48,10 @@ app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
 
+// app.get('/', (request, response) => {
+//     response.sendFile(__dirname + '/public/js/main.js')
+// })
+
 app.get('/api/:name', (request, response) => {
     const rapperName = request.params.name.toLowerCase()
     if(rappers[rapperName]){
@@ -57,8 +61,8 @@ app.get('/api/:name', (request, response) => {
     }
 })
 
-app.get('/', (request, response) => {
-    response.sendFile(__dirname + '/main.js')
+app.get('/main.js', (request, response) => {
+    response.sendFile(__dirname + '/public/js/main.js')
 })
 
 app.listen(process.env.PORT || PORT, () => {
